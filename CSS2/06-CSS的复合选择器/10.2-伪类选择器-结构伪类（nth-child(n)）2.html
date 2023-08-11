@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div > p:nth-child(2n) {
+            color: #4100ff;
+        }
+
+        /*
+            1. 0 或 不写 ：什么都选不中 —— 几乎不用。
+            2. n ：选中所有子元素 —— 几乎不用。
+            3. 1~正无穷的整数 ：选中对应序号的子元素。
+            4. 2n 或 even ：选中序号为偶数的子元素。
+            5. 2n+1 或 odd ：选中序号为奇数的子元素。
+            6. -n+3 ：选中的是前 3 个。
+        */
+    </style>
+</head>
+<body>
+<div>
+    <p>北京</p>
+    <p>上海</p>
+    <p>广州</p>
+    <p>深圳</p>
+    <p>杭州</p>
+</div>
+</body>
+</html>

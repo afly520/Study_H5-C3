@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*超链接未被访问的状态。*/
+        a:link {
+            color: orange;
+        }
+
+        /*超链接访问过的状态。*/
+        a:visited {
+            color: gray;
+        }
+
+        /*鼠标悬停在元素上的状态。*/
+        a:hover {
+            color: skyblue;
+        }
+
+        /*元素激活的状态。*/
+        a:active {
+            color: green;
+        }
+
+        /*选中的是鼠标悬浮的span元素*/
+        span:hover {
+            color: green;
+        }
+
+        /*选中的是激活的span元素*/
+        span:active {
+            color: red;
+        }
+
+        /*
+            表单类元素才能使用 :focus 伪类。
+            当用户：点击元素、触摸元素、或通过键盘的 “ tab ” 键等方式，选择元素时，就是获
+            得焦点。
+        */
+        input:focus {
+            color: orange;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<a href="https://www.baidu.com">go to baidu</a>
+<br>
+<a href="https://www.jd.com">go to jd</a>
+<br>
+<span>hello world</span>
+<br>
+<input type="text">
+<br>
+<input type="text">
+<br>
+<input type="text">
+</body>
+</html>

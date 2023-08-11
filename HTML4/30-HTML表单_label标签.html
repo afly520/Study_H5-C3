@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<form action="https://search.jd.com/search">
+    <label for="zhanghu">账户：</label><input id="zhanghu" type="text" name="account" maxlength="10">
+    <br>
+    <label>
+        密码：<input type="password" name="pwd" maxlength="6">
+    </label>
+    <br>
+
+
+
+    性别：
+    <input id="male" type="radio" name="gender" value="male">
+    <label for="male">男</label>
+    <label>
+        <input type="radio" name="gender" value="female">女
+    </label>
+    <br>
+
+
+
+    爱好：
+    <label>
+        <input type="checkbox" name="hobby" value="smoke">抽烟
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="drink">喝酒
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="perm">烫头
+    </label>
+    <br>
+
+
+    <label>
+        其他：<textarea name="other" id="" cols="30" rows="10"></textarea>
+    </label>
+    <br>
+
+
+
+    地点：
+    <select name="place" id="">
+        <option value="冀">北京</option>
+        <option value="鲁">上海</option>
+        <option value="晋">广州</option>
+        <option value="粤">深圳</option>
+    </select>
+    <br>
+    <input type="hidden" name="from" value="toutiao">
+    <br>
+    <input type="submit" value="点我提交表单">
+    <br>
+    <!-- <button>确认</button> -->
+    <br>
+    <!-- <button type="reset">重置</button> -->
+    <input type="reset" value="点我重置表单">
+    <input type="button" value="普通按钮">
+    <button type="button">普通按钮</button>
+    <br>
+
+</form>
+</body>
+
+</html>

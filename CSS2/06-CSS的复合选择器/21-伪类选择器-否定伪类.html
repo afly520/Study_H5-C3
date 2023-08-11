@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*排除满足括号中条件的元素。*/
+        /*div>p:not(.fail){
+            color: red;
+        }*/
+
+
+        div>p:not([title^='hhhh']){
+            color: #11dc5d;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>北京111</p>
+    <p>北京222</p>
+    <p>北京333</p>
+    <p title="hhhh">北京444</p>
+    <p title="hhhh">北京555</p>
+    <p class="fail">北京666</p>
+    <p class="fail">北京777</p>
+</div>
+</body>
+</html>

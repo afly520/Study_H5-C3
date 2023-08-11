@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*选中具有某个属性的元素*/
+        [title] {
+            color: red;
+        }
+
+        /*选中包含某个属性，且属性值等于指定值的元素*/
+        [title='world333'] {
+            color: green;
+        }
+
+        [title='world'] {
+            color: #ba02ff;
+        }
+
+        /*选中包含某个属性，且属性值以指定的值开头的元素*/
+        [title^='w'] {
+            font-size: 60px;
+        }
+
+        /*选中包含某个属性，且属性值以指定的值结尾的元素*/
+        [title*='e'] {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div title="helloworld111">hello world111</div>
+<div title="helloworld222">hello world222</div>
+<div title="world333">world333</div>
+<div title="world">world</div>
+<div title="world">world</div>
+</body>
+</html>

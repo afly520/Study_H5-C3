@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*选中元素中的第一个文字。*/
+        div::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        /* 选中元素中的第一行文字。*/
+        div::first-line {
+            background-color: yellow;
+        }
+
+        /*选中被鼠标选中的内容。*/
+        div::selection {
+            background-color: orange;
+            color: #11dc5d;
+        }
+
+        /*选中输入框的提示文字。*/
+        input::placeholder {
+            color: #11dc5d;
+        }
+
+
+        /*在元素最开始的位置，创建一个子元素（必须用 content 属性指定内容）。*/
+        p::before{
+            content: "￥";
+        }
+
+        /*在元素最后的位置，创建一个子元素（必须用 content 属性指定内容）。*/
+        p::after{
+            content:".00"
+        }
+    </style>
+</head>
+<body>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus asperiores assumenda, dolorem harum in ipsa iusto odit quibusdam repellat. Corporis debitis deserunt, doloremque enim, error eveniet hic incidunt inventore labore laboriosam magni molestiae optio, perspiciatis possimus quaerat quis reiciendis.</div>
+<input type="text" placeholder="请输入你的用户名">
+<p>199</p>
+<p>299</p>
+<p>399</p>
+<p>499</p>
+</body>
+</html>
