@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            background-color: dodgerblue;
+            color: white;
+            margin: 50px;
+        }
+
+        img {
+            margin: 50px;
+        }
+
+        .one {
+            background-color: blue;
+        }
+
+        .two {
+            background-color: red;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 3000px;
+        }
+
+        .three {
+            background-color: green;
+        }
+    </style>
+<body>
+<!--对于行内元素来说，左右的margin是可以完美设置的，上下的margin设置后是无效的-->
+<div id="d1">我是块级元素</div>
+<div>我是一段文字</div>
+<hr>
+<img src="../images/小方块.png" alt="">
+<div>我是一段文字</div>
+<hr>
+<span class="one">人之初</span><span class="two">性本善</span><span class="three">性相近</span>
+<div>我是一段文字</div>
+</body>
+</html>

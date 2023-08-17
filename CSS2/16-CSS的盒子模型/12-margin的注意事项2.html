@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            color: white;
+        }
+
+        .box1 {
+            background-color: blue;
+        }
+
+        .box2 {
+            background-color: green;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .box3 {
+            background-color: red;
+        }
+
+        .second {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--上margin、左margin会影响自身的位置，下margin、右margin会影响兄弟元素的位置-->
+<div class="box box1">1</div>
+<div class="box box2">2</div>
+<div class="box box3">3</div>
+<hr>
+<img src="../images/小方块.png" alt="">
+<img src="../images/小方块.png" alt="" class="second">
+<img src="../images/小方块.png" alt="">
+</body>
+</html>

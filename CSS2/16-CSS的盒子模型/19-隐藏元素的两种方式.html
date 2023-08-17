@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        .box1 {
+            background-color: blue;
+            /*设置 display:none ，就可以让元素隐藏。彻底地隐藏，不但看不见，也不占用任何位置，没有大小宽高。*/
+            display: none;
+
+            /*visibility 属性默认值是 show ，如果设置为 hidden ，元素会隐藏。元素看不见了，还占有原来的位置（元素的大小依然保持）。*/
+            /*visibility: hidden;*/
+        }
+
+        .box2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="box box1">1</div>
+<div class="box box2">2</div>
+</body>
+</html>
