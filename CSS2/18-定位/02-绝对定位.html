@@ -11,7 +11,7 @@
             background-color: skyblue;
             border: 1px solid black;
             padding: 20px;
-            /*position: absolute;*/
+            position: relative;
         }
 
         .box {
@@ -29,13 +29,18 @@
 
         .box2 {
             background-color: green;
-            position: relative;
-            top: 10px;
-            left: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            transition: 1s all linea;r
         }
 
         .box3 {
             background-color: deeppink;
+        }
+
+        .outer:hover .box2{
+            left: 220px;
         }
     </style>
 </head>
