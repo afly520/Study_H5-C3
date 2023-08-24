@@ -1,0 +1,500 @@
+/*基础设置*/
+.container {
+    width: 1190px;
+    height: 30px;
+    /*background-color: #4df194;*/
+    margin: 0 auto;
+}
+
+/*顶部导航条开始*/
+.topbar {
+    height: 30px;
+    background-color: #ececec;
+}
+
+.topbar .container .welcome {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+    color: #666;
+}
+
+.topbar .container .welcome span, .topbar .container .welcome a {
+    font-size: 12px;
+}
+
+.topbar .container .welcome .hello {
+    margin-right: 28px;
+}
+
+.topbar .container .welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.topbar .container .welcome .register {
+    padding-left: 10px;
+}
+
+.topbar .container .topbar-nav .lists {
+    height: 30px;
+    line-height: 30px;
+}
+
+.topbar .container .topbar-nav .lists li {
+    float: left;
+}
+
+.topbar .container .topbar-nav .lists li a {
+    padding: 0 15px;
+    border-right: 1px solid black;
+}
+
+.topbar .container .topbar-nav .lists li:first-child a {
+    padding-left: 0;
+}
+
+.topbar .container .topbar-nav .lists li:last-child a {
+    padding-right: 0;
+    border: 0;
+}
+
+/*顶部导航条结束*/
+
+.header {
+    height: 120px;
+    background-color: #43d356;
+}
+
+.header .search form {
+    margin-top: 42px;
+    font-size: 0;
+}
+
+.header .search input {
+    width: 508px;
+    height: 34px;
+    border: 1px solid #DD302D;
+
+}
+
+.header .search button {
+    width: 80px;
+    height: 36px;
+    vertical-align: top;
+    background-color: #DD302D;
+    background-image: url("../images/serch_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-nav {
+    height: 48px;
+    border-bottom: 1px solid #DD302D;
+}
+
+.main-nav .container .all-types {
+    height: 48px;
+    width: 190px;
+    line-height: 48px;
+    background-color: #DD302D;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main-nav .container .main-nav-lists {
+    height: 48px;
+    line-height: 48px;
+}
+
+.main-nav .container .main-nav-lists li {
+    float: left;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.main-content {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.main-content .container .slide-nav {
+    width: 190px;
+    height: 458px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.main-content .container .slide-nav li {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+}
+
+.main-content .container .slide-nav li:hover {
+    background-color: #DD302D;
+}
+
+.main-content .container .slide-nav li:hover > a {
+    color: white;
+}
+
+.main-content .container .slide-nav .second-menu {
+    width: 680px;
+    height: 458px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 190px;
+    padding-left: 20px;
+    display: none;
+}
+
+.main-content .container .slide-nav:hover .second-menu {
+    display: block;
+}
+
+.main-content .container .slide-nav .second-menu dl {
+    height: 36px;
+    line-height: 36px;
+}
+
+.main-content .container .slide-nav .second-menu dl:first-child {
+    margin-top: 10px;
+}
+
+.main-content .container .slide-nav .second-menu dt {
+    float: left;
+    width: 70px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.main-content .container .slide-nav .second-menu dd {
+    float: left;
+}
+
+.main-content .container .slide-nav .second-menu dd a {
+    padding: 0 10px;
+    border-left: 1px solid black;
+}
+
+
+.main-content .container .banner {
+    width: 690px;
+    height: 458px;
+    background-color: #9aea72;
+    margin: 0 10px;
+}
+
+.main-content .container .slide-other {
+    width: 290px;
+    height: 458px;
+    /*background-color: #8c72e5;*/
+}
+
+.main-content .container .slide-other .message {
+    width: 260px;
+    height: 156px;
+    border: 1px solid #d9d9d9;
+    padding: 0 14px;
+}
+
+.main-content .container .slide-other .message .title {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.main-content .container .slide-other .message .title span {
+    font-size: 14px;
+}
+
+.main-content .container .slide-other .message .title a {
+    font-size: 12px;
+}
+
+.main-content .container .slide-other .message .msg-list li {
+    line-height: 26px;
+    height: 26px;
+}
+
+.main-content .container .slide-other .other-nav {
+    width: 290px;
+    height: 290px;
+    margin-top: 10px;
+    /*background-color: orange;*/
+    overflow: hidden;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:first-child {
+    margin-top: 16px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(2) {
+    margin: 17px 0;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list li {
+    width: 48px;
+    height: 70px;
+    float: left;
+    /*background-color: #b5ea7c;*/
+    margin: 0 11px;
+    text-align: center;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list li span {
+    margin-top: 5px;
+}
+
+
+.main-content .container .slide-other .other-nav .other-nav-list li:first-child {
+    margin-left: 16px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list li .picture {
+    background-image: url("../images/精灵图-侧边功能.png");
+    width: 48px;
+    height: 48px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(1) li:nth-child(1) .picture {
+    background-position: 0 0;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(1) li:nth-child(2) .picture {
+    background-position: -48px 0;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(1) li:nth-child(3) .picture {
+    background-position: -96px 0;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(1) li:nth-child(4) .picture {
+    background-position: -144px 0;
+}
+
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(2) li:nth-child(1) .picture {
+    background-position: 0 -48px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(2) li:nth-child(2) .picture {
+    background-position: -48px -48px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(2) li:nth-child(3) .picture {
+    background-position: -96px -48px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(2) li:nth-child(4) .picture {
+    background-position: -144px -48px;
+}
+
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(3) li:nth-child(1) .picture {
+    background-position: 0 -96px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(3) li:nth-child(2) .picture {
+    background-position: -48px -96px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(3) li:nth-child(3) .picture {
+    background-position: -96px -96px;
+}
+
+.main-content .container .slide-other .other-nav .other-nav-list:nth-child(3) li:nth-child(4) .picture {
+    background-position: -144px -96px;
+}
+
+.seckill {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.seckill .container img {
+    float: left;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.seckill .container img:last-child {
+    margin-right: 0;
+}
+
+.floor {
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+.floor .container .floor-nav {
+    height: 30px;
+    padding-bottom: 4px;
+    line-height: 30px;
+    border-bottom: 2px solid #dd302d;
+}
+
+.floor .container .floor-nav .floor-name {
+    font-size: 20px;
+}
+
+.floor .container .floor-nav .floor-nav-list li {
+    float: left;
+    font-size: 14px;
+}
+
+.floor .container .floor-nav .floor-nav-list li a {
+    padding: 0 10px;
+    border-right: 1px solid #666;
+}
+
+.floor .container .floor-nav .floor-nav-list li:first-child a {
+    padding-left: 0;
+}
+
+.floor .container .floor-nav .floor-nav-list li:last-child a {
+    padding-right: 0;
+    border: 0;
+}
+
+.floor .container .floor-info {
+
+}
+
+.floor .container .floor-info .item {
+    float: left;
+}
+
+.floor .container .floor-info .item1 {
+    width: 190px;
+    height: 392px;
+    /*background-color: #f4f4f4;*/
+    padding: 20px;
+}
+
+.floor .container .floor-info .item1 .item1-lists {
+    margin-bottom: 140px;
+}
+
+.floor .container .floor-info .item1 .item1-lists li {
+    width: 90px;
+    height: 22px;
+    padding-bottom: 3.5px;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 16px;
+    text-align: center;
+}
+
+.floor .container .floor-info .item1 .item1-lists li:nth-child(2n-1) {
+    float: left;
+}
+
+.floor .container .floor-info .item1 .item1-lists li:nth-child(2n) {
+    float: right;
+}
+
+.floor .container .floor-info .item1 .item1-lists li:nth-child(3),
+.floor .container .floor-info .item1 .item1-lists li:nth-child(4) {
+    margin: 14.4px 0;
+}
+
+
+.floor .container .floor-info .item2 {
+    width: 340px;
+    height: 432px;
+    /*background-color: #5ad96a;*/
+}
+
+.floor .container .floor-info .item3 {
+    width: 206px;
+    height: 432px;
+    /*background-color: #6359e3;*/
+    border-right: 1px solid #e2e2e2;
+}
+
+.floor .container .floor-info .item3 img {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.floor .container .floor-info .item4 {
+    width: 206px;
+    height: 432px;
+    /*background-color: #c35bda;*/
+    border-right: 1px solid #e2e2e2;
+}
+
+.floor .container .floor-info .item4 img {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.floor .container .floor-info .item5 {
+    width: 206px;
+    height: 432px;
+    background-color: #e8ae1a;
+}
+
+.floor .container .floor-info .item5 img {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.footer {
+    height: 440px;
+    background-color: #483e3e;
+    margin-top: 50px;
+}
+
+.footer .links-list {
+    float: left;
+    width: 190px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top: 48px;
+}
+
+.footer .links-list a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer .line {
+    width: 1190px;
+    border: 1px solid #ffffff;
+    margin-top: 50px;
+}
+
+.footer .bottom-links {
+    text-align: center;
+}
+
+.footer .bottom-links .bottom-links-list {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.footer .bottom-links .bottom-links-list li {
+    float: left;
+}
+
+.footer .bottom-links .bottom-links-list li:first-child a {
+    padding-left: 0;
+}
+
+.footer .bottom-links .bottom-links-list li:last-child a {
+    padding-right: 0;
+    border: 0;
+}
+
+.footer .bottom-links .bottom-links-list li a {
+    padding: 0 26px;
+    border-right: 1px solid white;
+    color: white;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    color: white;
+}
