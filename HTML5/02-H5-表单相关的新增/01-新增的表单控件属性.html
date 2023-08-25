@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    <label>
+        账号：<input type="text" name="account" placeholder="请输入账号" required autofocus autocomplete="on" pattern="\w{6}">
+    </label>
+    <br>
+    <label>
+        密码：<input type="password" name="pwd" placeholder="请输入密码" required pattern="\w{6}">
+    </label>
+    <br>
+    性别：
+    <label>
+        <input type="radio" value="male" name="gender" required>男
+    </label>
+    <label>
+        <input type="radio" value="female" name="gender">女
+    </label>
+    <br>
+    爱好：
+    <label>
+        <input type="checkbox" value="smoke" name="hobby">抽烟
+    </label>
+    <label>
+        <input type="checkbox" value="drink" name="hobby" required>喝酒
+    </label>
+    <label>
+        <input type="checkbox" value="perm" name="hobby">烫头
+    </label>
+    <br>
+    描述：
+    <label>
+        <textarea name="other" placeholder="请输入描述" required></textarea>
+    </label>
+    <br>
+    <button>提交</button>
+</form>
+</body>
+</html>
