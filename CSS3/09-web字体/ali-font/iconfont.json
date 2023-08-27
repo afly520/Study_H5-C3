@@ -1,0 +1,37 @@
+{
+  "id": "2362754",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "36969597",
+      "name": "火锅-鸳鸯锅",
+      "font_class": "a-20230816meishitubiao_huoguo-yuanyangguo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "36969598",
+      "name": "烧烤-煎肉",
+      "font_class": "a-20230816meishitubiao_shaokao-jianrou",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "36969599",
+      "name": "茶饮-咖啡",
+      "font_class": "a-20230816meishitubiao_chayin-kafei",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "36969600",
+      "name": "小吃-糖葫芦",
+      "font_class": "a-20230816meishitubiao_xiaochi-tanghulu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

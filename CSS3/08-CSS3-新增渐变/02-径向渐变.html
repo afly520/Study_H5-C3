@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 50px;
+            /*font-size: 18px;*/
+            text-align: center;
+            line-height: 200px;
+            color: #0034ff;
+        }
+
+        .box1 {
+            background-image: radial-gradient(red, yellow, green);
+        }
+
+        .box2 {
+            background-image: radial-gradient(at left top, red, yellow, green);
+        }
+
+        .box3 {
+            background-image: radial-gradient(at 100px 50px, red, yellow, green);
+        }
+
+        .box4 {
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+
+        .box5 {
+            background-image: radial-gradient(300px 300px, red, yellow, green);
+        }
+
+        .box6 {
+            background-image: radial-gradient(red 150px, yellow 200px, green 250px);
+        }
+
+        .box7 {
+            background-image: radial-gradient(100px 50px at 150px 100px, red 150px, yellow 200px, green 250px);
+        }
+    </style>
+</head>
+<body>
+<div class="box box1">默认情况</div>
+<div class="box box2">通过关键词调整径向渐变圆的圆心</div>
+<div class="box box3">通过像素值（坐标）调整径向渐变圆的圆心</div>
+<div class="box box4">通过circle关键字调整为正圆</div>
+<div class="box box5">通过像素值调整为正圆</div>
+<div class="box box6">调整径向渐变的区域</div>
+<div class="box box7">综合写法</div>
+</body>
+</html>
