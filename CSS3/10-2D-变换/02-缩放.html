@@ -18,20 +18,14 @@
             width: 200px;
             height: 200px;
             background-color: deepskyblue;
-            /*transform: translateX(50px) translateY(50px);*/
-            transform: translate(50px, 50px);
+            /*transform:scaleX(1.5) scaleY(1.5);*/
+            transform: scale(1.5);
         }
 
-        .inner2 {
-            width: 60px;
-            height: 60px;
-            background-color: #41d943;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /*margin-left: -30px;
-            margin-top: -30px;*/
-            transform: translate(-50%, -50%);
+        span {
+            font-size: 20px;
+            display: inline-block;
+            transform: scale(0.5);
         }
     </style>
 </head>
@@ -39,8 +33,6 @@
 <div class="outer">
     <div class="inner1">你好啊</div>
 </div>
-<div class="outer">
-    <div class="inner2">你好啊</div>
-</div>
+<span>你好</span>
 </body>
 </html>

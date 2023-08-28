@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 100px auto;
+        }
+
+        .inner1 {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            /*通过关键词调整变换原点*/
+            /*transform-origin: left top;*/
+
+            /*通过像素值调整变换原点*/
+            /*transform-origin: 50px 50px;*/
+
+            /*通过百分比调整变换原点*/
+            /*transform-origin: 25% 25%;*/
+
+            /*只给一个值*/
+            /*transform-origin: left;*/
+
+            /*transform-origin: left top;*/
+
+            /*变换原点位置的改变对旋转有影响*/
+            /*transform: rotate(0deg);*/
+
+            /*变换原点位置的改变对缩放有影响*/
+            transform: scale(1);
+
+            /*变换原点位置的改变对位移没有影响*/
+            /*transform: translate(100px, 100px);*/
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner1">你好啊</div>
+</div>
+</body>
+</html>

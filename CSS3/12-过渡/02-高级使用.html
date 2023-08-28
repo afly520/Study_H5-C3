@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1300px;
+            height: 1000px;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .outer:hover .box {
+            width: 1300px;
+        }
+
+        .box {
+            width: 350px;
+            height: 100px;
+            /*让所有能过渡的属性都过渡*/
+            transition-property: all;
+            /*设置一个时间，所有人都用*/
+            transition-duration: 5s;
+            /*过渡的延迟*/
+            /*transition-delay: 2s;*/
+        }
+
+        .box1 {
+            background-color: red;
+            transition-timing-function: ease;
+        }
+
+        .box2 {
+            background-color: orange;
+            transition-timing-function: linear;
+        }
+
+        .box3 {
+            background-color: yellow;
+            transition-timing-function: ease-in;
+        }
+
+        .box4 {
+            background-color: green;
+            transition-timing-function: ease-out;
+        }
+
+        .box5 {
+            background-color: cyan;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box6 {
+            background-color: blue;
+            transition-timing-function: step-start;
+        }
+
+        .box7 {
+            background-color: purple;
+            transition-timing-function: step-end;
+        }
+
+        .box8 {
+            background-color: #00c28e;
+            transition-timing-function: steps(20, start);
+        }
+
+        .box9 {
+            background-color: #93007f;
+            transition-timing-function:cubic-bezier(1,.53,.6,1.22);
+        }
+
+        .box10 {
+            background-color: #a65900;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="box1 box">ease（慢-快-慢）</div>
+    <div class="box2 box">linear（匀速）</div>
+    <div class="box3 box">ease（慢-快）</div>
+    <div class="box4 box">ease-out（快-慢）</div>
+    <div class="box5 box">ease-in-out（慢-快-慢）</div>
+    <div class="box6 box">step-start（不考略过渡的时间，直接就是终点）</div>
+    <div class="box7 box">step-end（考虑过渡时间，无过渡效果，过渡时间到了以后，瞬间到达终点）</div>
+    <div class="box8 box">steps()分步过渡</div>
+    <div class="box9 box">无敌的贝塞尔曲线</div>
+    <div class="box10 box"></div>
+</div>
+</body>
+</html>

@@ -11,36 +11,25 @@
             height: 200px;
             border: 2px solid black;
             margin: 100px auto;
-            position: relative;
+            /*开启3D空间*/
+            transform-style: preserve-3d;
+            /*设置景深*/
+            perspective: 500px;
+            /*设置透视点的位置*/
+            perspective-origin: 102px 102px;
         }
 
         .inner1 {
             width: 200px;
             height: 200px;
             background-color: deepskyblue;
-            /*transform: translateX(50px) translateY(50px);*/
-            transform: translate(50px, 50px);
-        }
-
-        .inner2 {
-            width: 60px;
-            height: 60px;
-            background-color: #41d943;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /*margin-left: -30px;
-            margin-top: -30px;*/
-            transform: translate(-50%, -50%);
+            transform: rotateX(45deg);
         }
     </style>
 </head>
 <body>
 <div class="outer">
     <div class="inner1">你好啊</div>
-</div>
-<div class="outer">
-    <div class="inner2">你好啊</div>
 </div>
 </body>
 </html>
