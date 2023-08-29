@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .outer .inner {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /*应用动画到元素*/
+            animation-name: wangyoudong;
+            /*动画持续的时间*/
+            animation-duration: 2s;
+            /*动画的延迟时间*/
+            animation-delay: 2s;
+        }
+
+        /*定义动画关键帧*/
+        @keyframes wangyoudong {
+            /*第一帧*/
+            0% {
+            }
+            10% {
+                background-color: red;
+            }
+            20% {
+                background-color: #beff00;
+            }
+            30% {
+                background-color: #000000;
+            }
+            40% {
+                background-color: #00ebff;
+            }
+            50% {
+                background-color: #fcfcfc;
+            }
+            60% {
+                background-color: #3100ad;
+            }
+            70% {
+                background-color: #ff00f9;
+            }
+            80% {
+                background-color: #ff6c00;
+            }
+            90% {
+                background-color: darkcyan;
+            }
+            /*最后一帧*/
+            100% {
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+
+    </div>
+</div>
+</body>
+</html>

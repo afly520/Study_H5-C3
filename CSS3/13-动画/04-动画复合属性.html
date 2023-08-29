@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+.outer .inner {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    animation: wangyoudong 1s 0.5s linear 2 alternate-reverse forwards;
+}
+
+        .outer:hover .inner {
+            animation-play-state: paused;
+        }
+
+        /*定义动画关键帧*/
+        @keyframes wangyoudong {
+            /*第一帧*/
+            from {
+            }
+            /*最后一帧*/
+            to {
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .outer .inner {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /*应用动画到元素*/
+            animation-name: wangyoudong;
+            /*动画持续的时间*/
+            animation-duration: 2s;
+            /*动画的延迟时间*/
+            animation-delay: 0.2s;
+
+
+            /*其他属性-start*/
+            /*设置动画的方式*/
+            animation-timing-function: linear;
+
+            /*动画播放的次数*/
+            animation-iteration-count: infinite;
+
+            /*修改动画的方向*/
+            animation-direction: alternate;
+
+            /*动画以外的状态（不发生动画的时候在哪里）*/
+            /*animation-fill-mode: forwards;*/
+
+            /*动画播放状态*/
+            /*animation-play-state: paused;*/
+        }
+
+        .outer:hover .inner{
+            animation-play-state: paused;
+        }
+
+        /*定义动画关键帧*/
+        @keyframes wangyoudong {
+            /*第一帧*/
+            from {
+            }
+            /*最后一帧*/
+            to {
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+
+    </div>
+</div>
+</body>
+</html>
