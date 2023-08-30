@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 700px;
+            height: 900px;
+            background-color: #7a7a7a;
+            margin: 0 auto;
+
+            /*伸缩盒模型相关属性--start*/
+            /*将该元素变为了伸缩容器（开启了flex布局）*/
+            display: flex;
+
+            /*调整主轴方向，水平从左到右，默认*/
+            flex-direction: row;
+
+            /*主轴换行方式，换行*/
+            flex-wrap: wrap;
+
+            /*主轴的对齐方式，主轴的起始位置*/
+            justify-content: flex-start;
+
+            /*侧轴的对齐方式*/
+            align-content: flex-start;
+        }
+
+        .outer .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            color: red;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .outer .inner2 {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">1</div>
+    <div class="inner inner2">2</div>
+    <div class="inner">3</div>
+    <!--    <div class="inner">4</div>-->
+    <!--    <div class="inner">5</div>-->
+    <!--    <div class="inner">6</div>-->
+    <!--    <div class="inner">7</div>-->
+    <!--    <div class="inner">8</div>-->
+    <!--    <div class="inner">9</div>-->
+    <!--    <div class="inner">10</div>-->
+    <!--    <div class="inner">11</div>-->
+    <!--    <div class="inner">12</div>-->
+</div>
+</body>
+</html>

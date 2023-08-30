@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            height: 200px;
+            background-color: #81e572;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 100px;
+        }
+
+        /*检测到视口的宽度为800px时，应用如下样式*/
+        @media (width: 800px) {
+            h1 {
+                background-color: red;
+            }
+        }
+
+        /*检测到视口的宽度小于等于700时，应用如下样式*/
+        @media (max-width: 700px) {
+            h1 {
+                background-color: yellow;
+            }
+        }
+
+        /*检测到视口的宽度大于等于900px时，应用如下样式*/
+        @media (min-width: 900px) {
+            h1 {
+                background-color: blue;
+            }
+        }
+
+        /*检测到视口的高度等于600px时，应用如下样式*/
+        /*@media (height: 600px) {
+            h1 {
+                background-color: black;
+            }
+        }*/
+
+        /*检测到屏幕的宽度等于1536px时，应用如下样式*/
+        /*@media (device-width: 1536px) {
+            h1 {
+                !*background-image: linear-gradient(red, yellow);*!
+                color: white;
+            }
+        }*/
+    </style>
+</head>
+<body>
+<h1>你好啊</h1>
+</body>
+</html>

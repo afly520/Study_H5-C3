@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    height: 200px;
+    background-color: #81e572;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-size: 100px;
+}

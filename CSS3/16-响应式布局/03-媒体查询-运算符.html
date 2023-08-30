@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            height: 200px;
+            background-color: #81e572;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 100px;
+        }
+
+        /*且运算符*/
+        /*@media (min-width: 700px) and (max-width: 800px) {
+            h1 {
+                background-color: orange;
+            }
+        }*/
+
+        /*@media screen and (min-width: 700px) and (max-width: 800px) {
+            h1 {
+                background-color: orange;
+            }
+        }*/
+
+
+        /*或运算符*/
+        /*@media (min-width: 700px) or (max-width: 800px) {
+            h1 {
+                background-color: orange;
+            }
+        }*/
+
+        /*@media (min-width: 700px) , (max-width: 800px) {
+            h1 {
+                background-color: orange;
+            }
+        }*/
+
+
+        /*否定运算符*/
+        /*@media not screen {
+            h1 {
+                background-color: red;
+            }
+        }*/
+
+        /*肯定运算符*/
+        @media only screen {
+            h1 {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>你好啊</h1>
+</body>
+</html>

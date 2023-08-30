@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .page-header {
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .page-header .header-nav {
+            display: flex;
+        }
+
+        .page-header .header-nav li a {
+            color: white;
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .page-header .header-nav li:last-child a {
+            margin-right: 0;
+        }
+
+        .page-content {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+
+        .page-content .content-nav {
+            width: 1000px;
+            height: 300px;
+            /*background-color: skyblue;*/
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .page-content .content-nav .item {
+            width: 180px;
+            height: 200px;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            transition: 0.2s linear;
+            cursor: pointer;
+        }
+
+        .page-content .content-nav .item:hover {
+            box-shadow: 0 0 20px black;
+        }
+
+        .page-content .content-nav .item span {
+            font-size: 30px;
+            color: white;
+        }
+
+        .page-content .content-nav .item:nth-child(1) {
+            background-color: #595CA8;
+        }
+
+        .page-content .content-nav .item:nth-child(2) {
+            background-color: #FF9D2E;
+        }
+
+        .page-content .content-nav .item:nth-child(3) {
+            background-color: #01A6DE;
+        }
+
+        .page-content .content-nav .item:nth-child(4) {
+            background-color: #015E91;
+        }
+
+        .page-content .content-nav .item:nth-child(5) {
+            background-color: #2462d5;
+        }
+
+    </style>
+</head>
+<body>
+<header class="page-header">
+    <a class="logo">
+        <img src="../images/logo.png" alt="">
+    </a>
+    <ul class="header-nav">
+        <li><a href="#">国内校区</a></li>
+        <li><a href="#">缅甸校区</a></li>
+        <li><a href="#">非洲校区</a></li>
+        <li><a href="#">美国校区</a></li>
+    </ul>
+</header>
+<div class="page-content">
+    <div class="content-nav">
+        <div class="item">
+            <img src="../images/item1.png" alt="">
+            <span>我的邮箱</span>
+        </div>
+        <div class="item">
+            <img src="../images/item2.png" alt="">
+            <span>云服务</span>
+        </div>
+        <div class="item">
+            <img src="../images/item3.png" alt="">
+            <span>手机课堂</span>
+        </div>
+        <div class="item">
+            <img src="../images/item4.png" alt="">
+            <span>微信服务</span>
+        </div>
+        <div class="item">
+            <img src="../images/item5.png" alt="">
+            <span>在线客服</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
