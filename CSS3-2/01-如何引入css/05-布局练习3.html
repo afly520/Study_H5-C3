@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 300px;
+            background-color: #8dd974;
+            margin: 0 auto;
+        }
+
+        .box .left {
+            width: 300px;
+            height: 300px;
+            float: left;
+            background-color: red;
+        }
+
+        .box .right {
+            width: 700px;
+            height: 300px;
+            float: right;
+            background-color: green;
+        }
+
+        .box .right .top {
+            width: 700px;
+            height: 150px;
+            background-color: yellow;
+        }
+
+        .box .right .bottom {
+            width: 700px;
+            height: 150px;
+            background-color: #3fd7d2;
+        }
+
+        .box .right .bottom .b-left {
+            width: 350px;
+            height: 150px;
+            float: left;
+            background-color: #b728d7;
+        }
+
+        .box .right .bottom .b-right {
+            width: 350px;
+            height: 150px;
+            float: right;
+            background-color: #a8720e;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="b-left"></div>
+            <div class="b-right"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
